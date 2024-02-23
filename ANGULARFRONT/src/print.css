@@ -1,0 +1,37 @@
+@media print
+{
+  header{
+    display: none!important;
+  }
+  nav{
+    display: none;
+  }
+
+  main{
+    border: 3px solid black!important;
+    box-shadow: none!important;
+    height: 80vh!important;
+  }
+  table{
+    border: 1px solid black;
+
+  }
+  th{
+    color: var(--cor-titulos)!important;
+    border: 1px solid black;
+  }
+
+  td{
+    color: var(--cor-titulos)!important;
+    border: 1px solid black;
+  }
+
+  button{
+    display: none;;
+  }
+
+  .print{
+    display: none;
+  }
+
+}

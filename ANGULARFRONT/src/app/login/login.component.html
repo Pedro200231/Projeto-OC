@@ -1,0 +1,30 @@
+<main id="login">
+  <section id="login">
+      <div id="formulario">
+          <div id="cabecalho">
+              <h1>OC</h1>
+              <p>Operação Curiosidade</p>
+          </div>
+          <form autocomplete="on" id="form" #f="ngForm" [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div id="formulario">
+                  <div>
+                    <input name="email" type="email" class="inputs" id="email" placeholder="Digite seu email" autocomplete="email" formControlName="email" [class.error]="(form.get('email')?.invalid && form.get('email')?.dirty) || form.get('email')?.errors?.['incorrect'] == true " class="error-border">
+                  </div>
+                  <div class="input-with-icon">
+                    <input name="password" #passwordInput type="password" class="inputs" id="senha" placeholder="Senha" formControlName="password" [class.error]="(form.get('password')?.invalid && form.get('password')?.dirty) || form.get('password')?.errors?.['incorrect'] == true " class="error-border">
+
+                    <mat-icon (click)="passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password'">
+                      {{ passwordInput.type === 'password' ? 'visibility_off' : 'visibility' }}
+                    </mat-icon>
+                  </div>
+                  <div *ngIf="loginError" class="error-message">
+                    {{ loginError }}
+                  </div>
+              </div>
+
+              <input type="submit" value="Entrar" class="botao">
+          </form>
+          <button routerLink="/registerlogin" id="cadastrar">Cadastrar</button>
+      </div>
+  </section>
+</main>

@@ -1,0 +1,27 @@
+  <div id="table">
+      <table>
+          <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Status</th>
+                  <th colspan="3" id="acao" class="print">Ações</th>
+              </tr>
+
+          </thead>
+          <tbody>
+              <tr *ngFor="let Interno of Internos" >
+                  <td>{{Interno.name}}</td>
+                  <td>{{Interno.email}}</td>
+                  <td [ngClass]="{ 'ativo': Interno.status === 'Ativo', 'inativo': Interno.status === 'Inativo' }">{{Interno.status}}</td>
+                  <td class="print"><button class="details-button" (click)="openModal(Interno.id)">Detalhes</button></td>
+                  <td class="print"><button class="edit-button" (click)="openEditPage(Interno.id)">Editar</button></td>
+                  <td class="print"><button class="delete-button" (click)="openConfirmDeleteModal(Interno.id)">Excluir</button></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <app-modal [InternoId]="InternoId"></app-modal>
+  <app-deletemodal [InternoId]="DeleteId" (deletionConfirmed)="onDeletionConfirmed()"></app-deletemodal>
+
+

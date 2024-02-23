@@ -1,0 +1,14 @@
+.log-table .update-log-row:hover {
+  background-color: var(--cor-hover);
+  cursor: pointer;
+}
+
+.log-section {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+td {
+  padding: 5px;
+
+}

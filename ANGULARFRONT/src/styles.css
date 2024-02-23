@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*CORES*/
+:root{
+  --cor-bodybackground: #600580;
+  --cor-layoutbackground: #D356FF;
+  --cor-backgroundlista: #692A80;
+  --cor-divnav: #8106ad;
+  --cor-logo: #9908CC;
+  --cor-error: red;
+  --cor-letras: #fff;
+  --cor-hover: #590877;
+  --cor-titulos: #000;
+  --fonteinter: 'Inter', sans-serif;
+  --fonteroboto: 'Roboto', sans-serif;
+}
+/*-----------------------------------------------------------------------*/
+/*GERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+/*-----------------------------------------------------------------------*/
+/*NAV*/
+nav{
+  background-color: var(--cor-layoutbackground);
+  border: 1px solid var(--cor-layoutbackground);
+  box-shadow: 2px 3px 5px var(--cor-titulos);
+}
+nav > div{
+  background-color: var(--cor-divnav);
+}
+div > span#he1{
+  font-family: var(--fonteroboto);
+  color: var(--cor-titulos);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.41px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+div > span#h2{
+  color: var(--cor-titulos);
+  font-family: var(--fonteroboto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21.06px;
+}
+nav > p{
+  color: var(--cor-letras);
+  font-size: 16px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+  font-weight: 500;
+  margin-left: 10px;
+}
+nav > p > span{
+  color: var(--cor-letras);
+}
+nav > p > a{
+  color: var(--cor-letras);
+  text-decoration: none;
+}
+/*-----------------------------------------------------------------------*/
+/*HEADER*/
+header{
+  background-color: var(--cor-layoutbackground);
+  border: 1px solid var(--cor-layoutbackground);
+  box-shadow: 2px 3px 5px var(--cor-titulos);
+}
+#menu-icon{
+  color: var(--cor-divnav);
+  font-size: 25px;
+}
+header > input{
+  border: 1px solid var(--cor-layoutbackground);
+}
+header > div#bola{
+  border: 1px solid var(--cor-layoutbackground);
+  background-color: var(--cor-divnav);
+}
+header > span{
+  color: var(--cor-letras);
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+}
+header > span > a{
+    color: var(--cor-letras);
+    text-decoration: none;
+/*-----------------------------------------------------------------------*/
+/*MAIN*/
+}main{
+  border: 1px solid var(--cor-layoutbackground);
+  background-color: var(--cor-layoutbackground);
+  box-shadow: 2px 3px 5px black;
+}
+main > div{
+  background-color: var(--cor-layoutbackground);
+}
+span#h1{
+  color: var(--cor-titulos);
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: var(--fonteroboto);
+}
+main a{
+  color: var(--cor-letras);
+}
+main > div > a{
+  text-decoration: none;
+}
+/*-----------------------------------------------------------------------*/
+/*BOTÕES*/
+.botao{
+  background-color: var(--cor-divnav);
+  border: 1px solid var(--cor-titulos);
+  color: var(--cor-letras);
+  box-shadow: 1px 1px 3px var(--cor-titulos);
+  font-size: 1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: var(--cor-bodybackground);
+  color: var(--cor-texto);
+  transition: all .50s ease;
+}
+/*PAINÉIS*/
+
+div#cadastro{
+    background-color: var(--cor-bodybackground);
+
+}
+div > div#cadastrototal{
+  background-color: var(--cor-backgroundlista);
+  border: 1px solid var(--cor-backgroundlista);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.514);
+
+}
+div > div#cadastrototal > span{
+    color: #81BCD0;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+div > div#cadastrototal > p{
+  color: var(--cor-letras);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+div > div#cadastromes{
+  background-color: var(--cor-backgroundlista);
+  border: 1px solid var(--cor-backgroundlista);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.514);
+}
+
+div > div#cadastromes > span{
+  color: #DC9102;
+  font-weight: 700;
+  font-size: 64px;
+}
+div > div#cadastromes > p{
+  color: var(--cor-letras);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+div > div#cadastropr{
+  background-color: var(--cor-backgroundlista);
+  border: 1px solid var(--cor-backgroundlista);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.514);
+}
+
+div > div#cadastropr> span{
+  color: #C52932;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+div > div#cadastropr > p{
+  color: var(--cor-letras);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+/*-----------------------------------------------------------------------*/
+/*TABELAS*/
+table{
+  background-color: var(--cor-backgroundlista);
+  font-family: var(--fonteroboto);
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+tr.hover:hover{
+  transition: 0.5s;
+  opacity: 0.7;
+}
+th{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+td{
+  border-top: 1px solid var(--cor-titulos);
+  border-bottom: 1px solid var(--cor-titulos);
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 0.98rem;
+  font-weight: 400;
+  width: 50px;
+  text-align: center;
+}
+/*-----------------------------------------------------------------------*/
+/*Formulário*/
+main > div#cabmain > div > div#bolinha{
+    border: 1px solid var(--cor-backgroundlista);
+    background-color: var(--cor-letras);
+}
+main label{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cor-titulos);
+}
+main > div#cabmain > span#h1{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--fonteroboto);
+  line-height: 21.09px;
+}
+main > div#form > form >div#inome{
+    color: var(--cor-titulos);
+}
+main > div#form > form >div#inome > input{
+    border: 3px solid var(--cor-backgroundlista);
+}
+main > div#form > form > div#iidade{
+    color: var(--cor-titulos);
+}
+main > div#form > form >div#iidade>input#idade{
+    border: 3px solid var(--cor-backgroundlista);
+}
+main > div#form > form > div#iemail{
+    color: var(--cor-titulos);
+}
+
+main > div#form > form >div#iendereco{
+    color: var(--cor-titulos);
+}
+main > div#form > form >div#iendereco > input{
+    border: 3px solid var(--cor-backgroundlista);
+}
+h1{
+    color: var(--cor-titulos);
+}
+.h1form{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--fonteroboto);
+  color: var(--cor-titulos);
+}
+/*-----------------------------------------------------------------------*/
+/*Login*/
+main#login{
+  background-color: var(--cor-bodybackground);
+}
+section#login{
+  background-color: var(--cor-layoutbackground);
+  border: 1px solid var(--cor-titulos);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486);
+}
+div#cabecalho{
+  background-color: var(--cor-logo);
+  border: 1px solid var(--cor-logo);
+}
+div#cabecalho > h1{
+  color: var(--cor-titulos);
+  font-family: var(--fonteroboto);
+  font-weight: 700;
+  font-size: 45px;
+}
+div#cabecalho > p{
+  color: var(--cor-titulos);
+  font-family: var(--fonteroboto);
+  font-weight: 400;
+  font-size: 14px;
+}
+.inputs{
+  border: 3px solid var(--cor-layoutbackground);
+}
+.inputs:focus{
+  border-color: var(--cor-backgroundlista);
+}
+span{
+  font-weight: 900;
+  font-size: 14px;
+  font-family: var(--fonteroboto);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+.span-required{
+  color: var(--cor-error);
+}
+input[type="submit"]:hover{
+  background-color: var(--cor-hover);
+}
+#cadastrar{
+  background-color: var(--cor-divnav);
+  color: var(--cor-letras);
+  box-shadow: 1px 1px 3px var(--cor-titulos);
+}
+a{
+  color: var(--cor-letras);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.582);
+  font-size: 1em;
+}
+#cadastrar:hover{
+  background-color: var(--cor-hover);
+}
+/*-----------------------------------------------------------------------*/
+/*Cadastro Login*/
+body{
+  background-color: var(--cor-bodybackground);
+  color: var(--cor-letras);
+}
+.content{
+  background-color: var(--cor-layoutbackground);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486);
+}
+.content p{
+  font-weight: 500;
+}
+div.content > div#cabecalho > h1{
+  color: var(--cor-titulos);
+  font-family: var(--fonteroboto);
+  font-weight: 700;
+  font-size: 2.5em;
+}
+div.content > div#cabecalho > p{
+  color: var(--cor-titulos);
+  font-family: var(--fonteroboto);
+  font-weight: 400;
+  font-size: 14px;
+}
+.inputs{
+  border: 3px solid var(--cor-layoutbackground);
+}
+.inputs:focus{
+  border-color: var(--cor-backgroundlista);
+}
+.box-select{
+  font-weight: 400;
+}
+
+button[type="submit"]{
+  background-color: var(--cor-backgroundlista);
+  color: var(--cor-letras);
+  box-shadow: 1px 1px 3px black;
+  font-size: 1rem;
+}
+button[type="submit"]:hover{
+  background-color: var(--cor-hover);
+}
+
+/*-----------------------------------------------------------------------*/
+/*Responsividade*/
+
+@media screen and (max-width: 1326px){
+  main{
+    height: 55vh;
+  }
+
+}
+
+/*-----------------------------------------------------------------------*/
+/*Barra de Rolagem*/
+
+::-webkit-scrollbar {
+  background-color: var(--cor-layoutbackground);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-letras);
+  border-radius: 8px;
+}
+
+
+

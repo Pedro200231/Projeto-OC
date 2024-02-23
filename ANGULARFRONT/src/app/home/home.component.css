@@ -1,0 +1,114 @@
+div#cadastro{
+  display: flex;
+  align-items: center;
+  width: 99%;
+  height: 30%;
+  margin: auto;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+div > div#cadastrototal{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+div > div#cadastrototal > span{
+  transform: translate(0, 50px);
+}
+div > div#cadastrototal > p{
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+}
+div > div#cadastromes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+div > div#cadastromes > span{
+  transform: translate(0, 50px);
+}
+div > div#cadastromes > p{
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+div > div#cadastropr{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+
+div > div#cadastropr> span{
+  transform: translate(0, 50px);
+}
+
+div > div#cadastropr > p{
+  width: 100%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+main{
+  display: block;
+  width: 98%;
+  height: 54%;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 12px;
+  overflow: auto;
+}
+main > span#h1{
+  margin-left: 5px;
+}
+
+#infoModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+

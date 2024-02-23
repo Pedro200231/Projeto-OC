@@ -1,0 +1,155 @@
+main {
+  width: 98%;
+  padding: 5px;
+  margin: 12px;
+  border-radius: 5px;
+  position: relative;
+}
+main label {
+  margin-left: 8px;
+}
+
+input {
+  outline: none;
+}
+
+input#name {
+  border-radius: 5px;
+  width: 98.5%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+main>form>div#iidade {
+  padding: 5px;
+}
+
+input#idade {
+  border-radius: 5px;
+  width: 20%px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+main>form>div#iemail {
+  padding: 5px;
+}
+
+input#email {
+  border-radius: 5px;
+  width: 98.5%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+main>form>div#iendereco {
+  padding: 5px;
+}
+
+input#endereco {
+  border-radius: 5px;
+  width: 98.5%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+  margin-left: 10px;
+  color: #000;
+}
+
+label#status{
+  margin-left: 230px;
+}
+#slide{
+  margin-left: 90px;
+  outline: none;
+  border-radius: 10px;
+}
+
+textarea {
+  outline: none;
+  border-radius: 5px;
+  width: 98%;
+  height: 100px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 10px;
+  margin-bottom: 1px;
+  margin-left: 0px;
+}
+
+main>form>input[type=submit] {
+  display: block;
+  margin: auto;
+  width: 17%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 1;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor-backgroundlista);
+  padding: 20px;
+  border: none;
+  width: 400px;
+  font-family: var(--fonteinter);
+  box-shadow: 10px 10px 10px black;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.modal-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.modal-button {
+  background-color: var(--cor-layoutbackground);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: var(--cor-hover-titulos);
+}
+
+.error-border {
+  border: 3px solid var(--cor-backgroundlista);
+}
+
+.error {
+  border-color: rgb(211, 0, 0);
+}
+
+.error-message {
+  color: rgb(211, 0, 0);
+  font-weight: 600;
+  margin-left: 5px;
+}
