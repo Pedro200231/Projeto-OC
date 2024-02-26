@@ -1,0 +1,17 @@
+<!-- logs.component.html -->
+<main>
+  <div id="log-form">
+      <div id="header">
+          <h1>Registro de Logs</h1>
+          <!-- logs.component.html -->
+          <input type="text" placeholder="Pesquise aqui..." [(ngModel)]="palavraChave" (input)="filterByName()">
+
+      </div>
+
+      <div class="table">
+        <app-logtable></app-logtable>
+      </div>
+  </div>
+</main>
+
+

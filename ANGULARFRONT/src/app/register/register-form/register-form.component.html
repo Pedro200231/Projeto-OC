@@ -1,0 +1,88 @@
+<main>
+
+  <span id="h1" style="font-size: 1.5em; margin-bottom: 2px;">{{ titulo }}</span>
+  <h1 class="h1form">1º Fatos e Dados</h1>
+  <hr>
+  <form #f="ngForm" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Nome</label>
+      <br>
+      <input type="text" formControlName="name" id="name"
+        [class.error]="form.get('name')?.invalid && form.get('name')?.dirty" class="error-border">
+      <div *ngIf="form.get('name')?.invalid && form.get('name')?.dirty" class="error-message">
+        Nome é obrigatório e deve ter no mínimo 3 caracteres.
+      </div>
+    </div>
+    <div >
+      <label for="idade">Idade</label> <label for="status" id="status">Status</label>
+      <br>
+      <input type="number" formControlName="idade" id="idade"
+        [class.error]="form.get('idade')?.invalid && form.get('idade')?.dirty" class="error-border">
+
+        <mat-slide-toggle id="slide" [checked]="form.get('status')?.value" (change)="toggleChanged($event)">
+          {{ form.get('status')?.value ? 'Ativo' : 'Inativo' }}
+        </mat-slide-toggle>
+
+
+        <div *ngIf="form.get('idade')?.invalid && form.get('idade')?.dirty" class="error-message">
+          A idade é um campo obrigatório, e o valor deve estar dentro da faixa aceitável de 18 a 120 anos.
+      </div>
+
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <br>
+      <input type="email" formControlName="email" id="email"
+        [class.error]="form.get('email')?.invalid && form.get('email')?.dirty" class="error-border">
+      <div *ngIf="form.get('email')?.invalid && form.get('email')?.dirty" class="error-message">
+        E-mail é obrigatório e deve ter um formato válido.
+      </div>
+    </div>
+    <div>
+      <label for="endereco">Endereço</label>
+      <br>
+      <input type="text" formControlName="endereco" id="endereco"
+        [class.error]="form.get('endereco')?.invalid && form.get('endereco')?.dirty" class="error-border">
+      <div *ngIf="form.get('endereco')?.invalid && form.get('endereco')?.dirty" class="error-message">
+        Endereço é obrigatório e deve ter no mínimo 5 caracteres.
+      </div>
+    </div>
+
+
+
+    <h1 class="h1form">2º Interesses</h1>
+    <hr>
+    <textarea type="text" formControlName="interesses" id="interesse"
+      [class.error]="form.get('interesses')?.invalid && form.get('interesses')?.dirty" class="error-border"></textarea>
+    <div *ngIf="form.get('interesses')?.invalid && form.get('interesses')?.dirty" class="error-message">
+      Interesses são obrigatórios e devem ter no mínimo 5 caracteres.
+    </div>
+
+    <h1 class="h1form">3º Curiosidades</h1>
+    <hr>
+    <textarea type="text" formControlName="curiosidades" id="curiosidade"
+      [class.error]="form.get('curiosidades')?.invalid && form.get('curiosidades')?.dirty"
+      class="error-border"></textarea>
+    <div *ngIf="form.get('curiosidades')?.invalid && form.get('curiosidades')?.dirty" class="error-message">
+      Curiosidades são obrigatórias e devem ter no mínimo 5 caracteres.
+    </div>
+
+    <h1 class="h1form">4º Valores</h1>
+    <hr>
+    <textarea type="text" formControlName="valores" id="valores"
+      [class.error]="form.get('valores')?.invalid && form.get('valores')?.dirty" class="error-border"></textarea>
+
+    <div *ngIf="form.get('valores')?.invalid && form.get('valores')?.dirty" class="error-message">
+      Valores são obrigatórios e devem ter no mínimo 5 caracteres.
+    </div>
+
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+
+    <input type="submit" [value]="botao" class="botao">
+  </form>
+
+
+  <!-- //<app-form-debug [form]="f"></app-form-debug> -->
+</main>

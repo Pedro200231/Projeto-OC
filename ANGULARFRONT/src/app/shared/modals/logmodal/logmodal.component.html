@@ -1,0 +1,9 @@
+<div id="logModal" class="modal" >
+  <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <h2>Detalhes do Log</h2>
+      <div id="beforeAfterContent">
+          <div class="log-details"  [innerHTML]="modifiedDetailsHTML"></div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+      <span class="close" (click)="closeModal()"> &times;</span>
+      <h2>Informações Detalhadas</h2>
+      <div id="modalContent" *ngIf="Internos != null">
+          <p><strong>Nome:</strong> {{ Internos.name }}</p>
+          <p><strong>Idade:</strong> {{ Internos.idade }}</p>
+          <p><strong>Email:</strong> {{ Internos.email }}</p>
+          <p><strong>Endereço:</strong> {{ Internos.endereco }}</p>
+          <p><strong>Status:</strong> {{ Internos.status }}</p>
+          <p><strong>Interesses:</strong> {{ Internos.interesses }}</p>
+          <p><strong>Curiosidades:</strong> {{ Internos.curiosidades }}</p>
+          <p><strong>Valores:</strong> {{ Internos.valores }}</p>
+      </div>
+  </div>
+</div>
